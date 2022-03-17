@@ -1,9 +1,6 @@
 import './style/index.less'
+import GameContorl from './modules/gameContorl'
 
-class food {
-    element: HTMLElement
+const gameContorl = new GameContorl()
 
-    constructor () {
-        this.element = document.getElementById('food')!
-    }
-}
+gameContorl.init()
